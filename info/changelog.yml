@@ -1,0 +1,5 @@
+Version: 1.0.1
+  Change "Case Sensitive" default setting to True
+  Prevent crash on FileExistsError (when user tries to rename multiple files the same using Regex)
+Version: 1.0.0
+  Initial release
