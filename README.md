@@ -1,6 +1,6 @@
 # Batch Renamer
 
-Batch Renamer allows you to rename a large number of files at once.
+Batch Renamer allows you to rename a large number of files on a Windows PC all at once. 
 
 ## Installation
 
@@ -34,7 +34,7 @@ Launch the app from the command line:
 Install the standalone app using the self extracting installer
 Launch Batch Renamer from the start menu
 
-### Using the GUI
+### Using the GUI (Windows)
 The GUI interface is fairly simple. To change a set of characters in a batch of files, use the following steps:
 1. Click the "Open" button (or use the keyboard shortcut Ctrl+O) and search for a group of files that you want to rename. The names of these files will appear in the white box below. 
 2. In the "Replace This Text" field, type the characters that you want to replace
@@ -44,16 +44,6 @@ The GUI interface is fairly simple. To change a set of characters in a batch of 
     * "Case Sensitive?" allows case-sensitive search and replace. <b><i>If you uncheck this box, you will create file names with only lower-case characters. </i></b>
     * "Change Extension?" Check this box if you want to include change the file extension in search and replace. The default setting ignores the file extension.
 5. Click "Execute Rename" to search for the text from step 2 and replace all instances with the text from step 3. 
-
-In the example below, clicking "Execute Rename" will replace the phrase "Ar_typo" in the last three files with "Ar_A". 
-
-| ![GUI screencap](images\example.png) |
-| --- | 
-| Figure 1: Example Batch Renamer GUI |
-
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ### Updating the standalone installer (Windows)
 If you made changes to the python code, you can re-build the installer and stand-alone app by running publish_batch_renamer_[your-environment-manager].bat from the command line. This will use pyinstaller to bundle the application and dependancies, and zip them into a self-extracting installer that will install them to a specified folder. 
