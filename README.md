@@ -12,20 +12,26 @@ NO python installation or coding is needed to run this program as a standalone a
 2. Run the self extracting installer
 3. Verify correct installation by launching the program from the Start Menu
 
-### Install for use with Python
+### Install for use with Python (Windows)
 1. Setup environment with conda 
-    ```conda env create -f setup\environment.yml```
+    ```conda env create --name batch_renamer_prod python=3.8```
+    ```pip install -r requirements.txt```
+    ```conda activate batch_renamer_prod```
 OR
-2. Setup environment with pip 
-    ```python3 -m venv batch_renamer_prod```
-    ```pip install -r setup\requirements.txt```
+2. Setup environment with pyenv and pip 
+    ```pyenv install 3.8```
+    ```pyenv local 3.8```
+    ```[path to python3.8 exe] -m venv batch_renamer_prod```
+    ```pip install -r requirements.txt```
+    ```batch_renamer_prod\Scripts\activate```
 
 ## Usage
 ### Python GUI
 Launch the app from the command line:
 ```python batch_renamer.py```
 
-### Standalone GUI
+### Standalone GUI (Windows)
+Install the standalone app using the self extracting installer
 Launch Batch Renamer from the start menu
 
 ### Using the GUI
@@ -49,5 +55,5 @@ In the example below, clicking "Execute Rename" will replace the phrase "Ar_typo
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Updating the standalone installer
-If you made changes to the python code, you can re-build the installer and stand-alone app by running publish_batch_renamer.bat from the command line (requires conda package manager). This will use pyinstaller to bundle the application and dependancies, and zip them into a self-extracting installer that will install them to a specified folder. 
+### Updating the standalone installer (Windows)
+If you made changes to the python code, you can re-build the installer and stand-alone app by running publish_batch_renamer_[your-environment-manager].bat from the command line. This will use pyinstaller to bundle the application and dependancies, and zip them into a self-extracting installer that will install them to a specified folder. 

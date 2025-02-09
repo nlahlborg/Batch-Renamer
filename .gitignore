@@ -3,6 +3,8 @@
 
 # distribution files
 *.exe
+!Batch_Renamer_self_extracting_installer.EXE
+util/Batch_Renamer.SED
 dist/*
 build/*
 *.zip
@@ -10,3 +12,7 @@ build/*
 # testing files
 test*
 user_settings.json
+
+#local settings and venv
+.python-version
+batch_renamer_prod/
