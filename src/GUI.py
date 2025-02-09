@@ -1,5 +1,4 @@
 # Author:   Nadia Ahlborg
-#           nahlborg@quantumscape.com
 #   
 #       This is a stand-alone GUI to help rename many files at once. It's really goot for correcting 
 #       typos in logfile names, or adding additional information to auto-generated files.
@@ -97,9 +96,6 @@ class GUI(QWidget):
 
         sigBox = QHBoxLayout()
         sigBox.addStretch(1)
-        signature = QLabel("Created by Nadia Ahlborg")
-        signature.setObjectName("signature")
-        sigBox.addWidget(signature)
 
         mainBox = QVBoxLayout()
         mainBox.addLayout(topBox)

@@ -1,5 +1,4 @@
 # Author:   Nadia Ahlborg
-#           nahlborg@quantumscape.com
 #   
 #       This is a stand-alone GUI to help rename many files at once. It's really goot for correcting 
 #       typos in logfile names, or adding additional information to auto-generated files.

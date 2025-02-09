@@ -1,6 +1,3 @@
-# Author:   Nadia Ahlborg
-#           nahlborg@quantumscape.com
-#   
 #       This is a set of functions for renaming a lot of files at once
 
 import pandas as pd
